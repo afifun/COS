@@ -1,0 +1,11 @@
+module ObjectiveTarget;
+
+interface ObjectiveTarget{
+	String description();
+}
+
+class ObjectiveTargetImpl implements ObjectiveTarget {
+	String description(){
+		return "";
+	}
+}

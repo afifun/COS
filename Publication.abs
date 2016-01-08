@@ -1,0 +1,11 @@
+module Publication;
+
+interface Publication {
+	String description();
+}
+
+class PublicationImpl implements Publication {
+	String description(){
+		return "publication";
+	}
+}

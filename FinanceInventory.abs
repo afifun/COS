@@ -1,0 +1,12 @@
+module FinanceInventory;
+export *;
+
+interface FinanceInventory{
+	String description();
+}
+
+class FinanceInventoryImpl implements FinanceInventory {
+	String description(){
+		return "";
+	}
+}

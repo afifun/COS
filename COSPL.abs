@@ -1,0 +1,26 @@
+productline COS;
+	features Periodic, Eventual, Notification, Blog,  Income, 
+		Expense, IndividualDonor, Continuous, AutomaticReport, Summary, 
+		Product, InstitutionBeneficiary, District, IndividualBeneficiary, 
+		Money, Item, InstitutionDonor, Confirmation;
+		
+		
+	
+	delta DPeriodic when Periodic; 
+	delta DEventual when Eventual; 
+	delta DNotification when Notification; 
+	delta DBlog when Blog;  
+	delta DIncome when Income; 
+	delta DExpense when Expense; 
+	delta DIndividualDonor when IndividualDonor; 
+	delta DContinuous when Continuous; 
+	delta DAutomaticReport when AutomaticReport; 
+	delta DSummary when Summary; 
+	delta DProductBeneficiary when Product; 
+	delta DInstitutionBeneficiary when InstitutionBeneficiary; 
+	delta DDistrict when District; 
+	delta DIndividualBeneficiary when IndividualBeneficiary; 
+	delta DMoney when Money; 
+	delta DItem when Item; 
+	delta DInstitutionDonor when InstitutionDonor;
+	delta DConfirmation when Confirmation;

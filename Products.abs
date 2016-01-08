@@ -1,0 +1,20 @@
+//product COS_base (Program, Publication, Income);
+
+// Aplikasi Sekolah Bermain Matahari, contact person: ???
+product SekolahBermainMatahari (Periodic, Eventual,
+ Notification, Blog,  Income, Expense, IndividualDonor);
+
+// Aplikasi untuk bagian pendayagunaan PKPU, contact person: Afifun
+product PKPU (Periodic, Eventual, Continuous,
+Blog, AutomaticReport, Summary, InstitutionDonor,
+Product,InstitutionBeneficiary,District);
+
+// Aplikasi Ramadhan for Kids. Contact Person: Dipta(Nay) dan Suci
+product RamadhanForKids(Periodic, Notification, Blog,
+Income, Expense, IndividualDonor,
+IndividualBeneficiary,District,Money);
+
+// Aplikasi Tim BeriBuku. www.beribuku.com, Contact Person: Risma
+product BeriBuku(Eventual, AutomaticReport, Notification, 
+Blog, Summary,IndividualDonor,
+InstitutionBeneficiary, Money,Item);

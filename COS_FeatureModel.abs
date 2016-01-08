@@ -1,0 +1,51 @@
+root CharityOrganizationSystem {
+   group allof {
+        Program {
+             group allof {
+                  opt Periodic,
+                  opt Continous,
+                  opt Eventual  
+             	 } 
+               },
+        Publication {
+             group allof {
+                  opt Notification,
+                  opt AutomaticReport {require: Finance_Inventory;},
+                  opt Blog
+             	 } 
+             	},
+       Finance_Inventory {
+             group [1..*]{
+                  Summary {exclude:Income; exclude: Expense;},
+                  Donor {
+                       group [1..*]{
+                            IndividualDonor ,
+                            InstitutionDonor 
+                       	 }
+                        },  
+                  Expense,
+                  Income 
+             	 } 
+               },
+        opt Donation {
+             group [1..*] {
+                  Money,
+                  Item,
+                  Confirmation 
+             	 } 
+              } , 
+       opt Objective_Target {
+             group [1..*]{
+                  Beneficiary{
+                       group [1..*] {
+                             IndividualBeneficiary,
+                             InstitutionBeneficiary ,
+                             District  
+                       	 } 
+                        },
+                  Product{
+                        } 
+             	 } 
+               }
+   } 
+} 

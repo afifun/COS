@@ -1,0 +1,20 @@
+module COS;
+import Program,ProgramImpl from Program;
+import Publication,PublicationImpl from Publication;
+import ObjectiveTarget,ObjectiveTargetImpl from ObjectiveTarget;
+import FinanceInventory,FinanceInventoryImpl from FinanceInventory;
+
+{
+	
+	Program prgobj = new local ProgramImpl();
+	String prg_description = prgobj.description();
+	
+	Publication pubobj = new local PublicationImpl();
+	String pub_description = pubobj.description();
+	
+	ObjectiveTarget otobj = new local ObjectiveTargetImpl();
+	String ot_description = otobj.description();
+	
+	FinanceInventory fiobj = new local FinanceInventoryImpl();
+	String fi_description = fiobj.description();
+}

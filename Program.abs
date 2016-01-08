@@ -1,0 +1,11 @@
+module Program;
+export *;
+interface Program {
+	String description();
+}
+
+class ProgramImpl implements Program {
+	String description(){
+		return "";
+	}
+}
